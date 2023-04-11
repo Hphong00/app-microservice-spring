@@ -1,13 +1,13 @@
 package com.app.userservice.service.impl;
 
-
-import com.app.userservice.convertor.UserMapper;
 import com.app.userservice.dto.KeycloakUser;
 import com.app.userservice.dto.SignUpRequest;
-import com.app.userservice.entity.User;
+import com.app.userservice.entity.Users;
 import com.app.userservice.repository.UserRepository;
 import com.app.userservice.service.KeycloakService;
 import com.app.userservice.service.UserService;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
 public class UserServiceImpl implements UserService {
 
     private final Logger LOGGER = LoggerFactory.getLogger(getClass());
-
+    private ObjectMapper mapper = new ObjectMapper().configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
     private final UserRepository userRepository;
     private final KeycloakService keycloakService;
 
@@ -32,8 +32,8 @@ public class UserServiceImpl implements UserService {
         LOGGER.info("UserServiceImpl | signUpUser is started");
 
         KeycloakUser keycloakUser = new KeycloakUser();
-        keycloakUser.setFirstName(signUpRequest.getName());
-        keycloakUser.setLastName(signUpRequest.getSurname());
+        keycloakUser.setFirstName(signUpRequest.getFirstName());
+        keycloakUser.setLastName(signUpRequest.getLastName());
         keycloakUser.setEmail(signUpRequest.getEmail());
         keycloakUser.setPassword(signUpRequest.getPassword());
         keycloakUser.setRole(signUpRequest.getRole());
@@ -45,12 +45,9 @@ public class UserServiceImpl implements UserService {
 
             LOGGER.info("UserServiceImpl | signUpUser | status : " + status);
 
-            User signUpUser = UserMapper.signUpRequestToUser(signUpRequest);
+            Users user =  mapper.convertValue(keycloakUser, Users.class);
 
-            signUpUser.setCreatedAt(LocalDateTime.now());
-
-            userRepository.save(signUpUser);
-
+            userRepository.save(user);
             return "Sign Up completed";
         }
 

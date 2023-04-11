@@ -30,23 +30,23 @@ public class UserController {
     private final KeycloakService keycloakService;
 
     @PostMapping("/signup")
-    public ResponseEntity<?> signUpUser(@RequestBody SignUpRequest signUpRequest){
+    public ResponseEntity<?> signUpUser(@RequestBody SignUpRequest signUpRequest) {
 
         LOGGER.info("UserController | signUpUser is started");
         LOGGER.info("UserController | signUpUser | SignUpRequest role : " + signUpRequest.getRole());
         LOGGER.info("UserController | signUpUser | SignUpRequest email : " + signUpRequest.getEmail());
-        LOGGER.info("UserController | signUpUser | SignUpRequest name : " + signUpRequest.getName());
+        LOGGER.info("UserController | signUpUser | SignUpRequest name : " + signUpRequest.getFirstName());
 
         return ResponseEntity.ok(userService.signUpUser(signUpRequest));
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AccessTokenResponse> login(@RequestBody LoginRequest request){
+    public ResponseEntity<AccessTokenResponse> login(@RequestBody LoginRequest request) {
 
         LOGGER.info("UserController | login is started");
 
-        AccessTokenResponse accessTokenResponse =keycloakService.loginWithKeycloak(request);
-        if (accessTokenResponse == null){
+        AccessTokenResponse accessTokenResponse = keycloakService.loginWithKeycloak(request);
+        if (accessTokenResponse == null) {
             LOGGER.info("UserController | login | Http Status Bad Request");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(accessTokenResponse);
         }
@@ -58,7 +58,7 @@ public class UserController {
 
 
     @GetMapping("/info")
-    public ResponseEntity<String> infoUser(){
+    public ResponseEntity<String> infoUser() {
 
         LOGGER.info("UserController | infoUser is started");
 
@@ -67,7 +67,7 @@ public class UserController {
         LOGGER.info("UserController | infoUser | auth toString : " + auth.toString());
         LOGGER.info("UserController | infoUser | auth getPrincipal : " + auth.getPrincipal());
 
-        KeycloakPrincipal principal = (KeycloakPrincipal)auth.getPrincipal();
+        KeycloakPrincipal principal = (KeycloakPrincipal) auth.getPrincipal();
         KeycloakSecurityContext session = principal.getKeycloakSecurityContext();
         AccessToken accessToken = session.getToken();
 

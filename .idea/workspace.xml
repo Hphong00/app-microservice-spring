@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6db9fc5e-aa7c-4e2b-81d1-42820ea58e8b" name="Changes" comment="" />
+    <list default="true" id="6db9fc5e-aa7c-4e2b-81d1-42820ea58e8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_ea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_i2p_crypto_eddsa_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_common_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_core_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_osgi_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_sftp_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_13_1_202206130422_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_13_1_202206130422_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_ssh_apache_5_13_1_202206130422_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_3_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/utils/TokenRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/convertor/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/dto/SignUpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/dto/SignUpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/entity/BaseDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/entity/BaseDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/entity/IdBasedEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/service/impl/KeycloakServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/service/impl/KeycloakServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +52,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -36,45 +74,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/hoangphong/Documents/app/userservice/src/main/java/com/app/userservice/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "44fc9619f0559f722f4b028a6c72e104",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hoangphong/Documents/app/userservice/src/main/java/com/app/userservice/dto&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;44fc9619f0559f722f4b028a6c72e104&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/dto" />
+      <recent name="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/service" />
       <recent name="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/config" />
       <recent name="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice" />
       <recent name="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/repository" />
-      <recent name="$PROJECT_DIR$/userservice/src/main/java/com/app/userservice/dto" />
-      <recent name="$PROJECT_DIR$/ordersevice/src/main/java/com/app/ordersevice/dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.app.ordersevice.utils" />
       <recent name="com.app.userservice.utils" />
+      <recent name="com.app.userservice.config" />
+      <recent name="com.app.ordersevice.utils" />
       <recent name="com.app.productservice.utils" />
       <recent name="com.app.productservice.dto.respon" />
-      <recent name="com.app.productservice.constacts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -84,7 +124,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserserviceApplication">
+  <component name="RunManager" selected="Spring Boot.CloudConfigApplication (1)">
     <configuration name="AdministrationseviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="administrationsevice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.administrationsevice.AdministrationseviceApplication" />
@@ -112,6 +152,13 @@
     <configuration name="CartseviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="cartsevice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.cartsevice.CartseviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudConfigApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cloud-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.cloudconfig.CloudConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,6 +216,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.CloudConfigApplication (1)" />
       <item itemvalue="Spring Boot.AdministrationseviceApplication" />
       <item itemvalue="Spring Boot.CartseviceApplication" />
       <item itemvalue="Spring Boot.OrderseviceApplication" />
@@ -199,7 +247,8 @@
       <workItem from="1681143675333" duration="4971000" />
       <workItem from="1681153499751" duration="5395000" />
       <workItem from="1681182083498" duration="199000" />
-      <workItem from="1681182523137" duration="4667000" />
+      <workItem from="1681182523137" duration="17643000" />
+      <workItem from="1681211705679" duration="628000" />
     </task>
     <servers />
   </component>

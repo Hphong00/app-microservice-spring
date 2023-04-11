@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigateway" />
+        <module name="cloud-config" />
         <module name="transportsevice" />
         <module name="administrationsevice" />
         <module name="cartsevice" />
@@ -23,6 +24,7 @@
       <module name="apigateway" target="11" />
       <module name="appbase" target="1.5" />
       <module name="cartsevice" target="11" />
+      <module name="cloud-config" target="11" />
       <module name="discoveryservice" target="11" />
       <module name="ordersevice" target="11" />
       <module name="paysevice" target="11" />
@@ -37,6 +39,7 @@
       <module name="apigateway" options="-parameters" />
       <module name="appbase" options="" />
       <module name="cartsevice" options="-parameters" />
+      <module name="cloud-config" options="-parameters" />
       <module name="discoveryservice" options="-parameters" />
       <module name="ordersevice" options="-parameters" />
       <module name="paysevice" options="-parameters" />

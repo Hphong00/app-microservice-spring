@@ -1,13 +1,11 @@
 package com.app.userservice.service.impl;
 
-import com.app.userservice.config.KeycloakConfig;
 import com.app.userservice.dto.KeycloakUser;
 import com.app.userservice.dto.LoginRequest;
 import com.app.userservice.service.KeycloakService;
 import org.keycloak.admin.client.CreatedResponseUtil;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.admin.client.KeycloakBuilder;
-import org.keycloak.admin.client.resource.UserResource;
 import org.keycloak.admin.client.resource.UsersResource;
 import org.keycloak.representations.AccessTokenResponse;
 import org.keycloak.representations.idm.CredentialRepresentation;
@@ -15,6 +13,7 @@ import org.keycloak.representations.idm.RoleRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,6 +41,9 @@ public class KeycloakServiceImpl implements KeycloakService {
     @Value("${clientSecret}")
     private String clientSecret;
 
+    @Value("${grantType}")
+    private String grantType;
+
     private final Keycloak keycloak;
 
     public KeycloakServiceImpl(Keycloak keycloak) {
@@ -51,28 +53,17 @@ public class KeycloakServiceImpl implements KeycloakService {
     @Override
     public AccessTokenResponse loginWithKeycloak(LoginRequest request) {
         Keycloak loginKeycloak = buildKeycloak(request.getUsername(), request.getPassword());
-
         AccessTokenResponse accessTokenResponse = null;
-
-        try{
+        try {
             accessTokenResponse = loginKeycloak.tokenManager().getAccessToken();
             return accessTokenResponse;
-        }catch (Exception e){
+        } catch (Exception e) {
             return null;
         }
     }
 
     private Keycloak buildKeycloak(String username, String password) {
-
-        return KeycloakBuilder.builder()
-                .realm(realm)
-                .serverUrl(serverUrl)
-                .clientId(clientId)
-                .clientSecret(clientSecret)
-                .username(username)
-                .password(password)
-                .build();
-
+        return KeycloakBuilder.builder().serverUrl(serverUrl).realm(realm).clientId(clientId).clientSecret(clientSecret).username(username).password(password).build();
     }
 
     @Override
@@ -86,7 +77,7 @@ public class KeycloakServiceImpl implements KeycloakService {
         userRepresentation.setEmail(keycloakUser.getEmail());
         userRepresentation.setUsername(keycloakUser.getUsername());
         HashMap<String, List<String>> clientRoles = new HashMap<>();
-        clientRoles.put(clientId,Collections.singletonList(keycloakUser.getRole()));
+        clientRoles.put(clientId, Collections.singletonList(keycloakUser.getRole()));
         userRepresentation.setClientRoles(clientRoles);
 
         userRepresentation.setEnabled(true);
@@ -115,16 +106,12 @@ public class KeycloakServiceImpl implements KeycloakService {
         String userId = CreatedResponseUtil.getCreatedId(response);
         LOGGER.info("KeycloakServiceImpl | createUserWithKeycloak | userId : " + userId);
 
-        RoleRepresentation savedRoleRepresentation = keycloak.realm(realm).roles()
-                .get(keycloakUser.getRole()).toRepresentation();
+        RoleRepresentation savedRoleRepresentation = keycloak.realm(realm).roles().get(keycloakUser.getRole()).toRepresentation();
 
-        keycloak.realm(realm).users().get(userId).roles().realmLevel()
-                .add(Arrays.asList(savedRoleRepresentation));
+        keycloak.realm(realm).users().get(userId).roles().realmLevel().add(Arrays.asList(savedRoleRepresentation));
 
         LOGGER.info("KeycloakServiceImpl | createUserWithKeycloak | Added Role to User");
 
         return response.getStatus();
-
     }
-
 }
