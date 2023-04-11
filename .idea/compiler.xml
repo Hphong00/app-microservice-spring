@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apigateway" />
+        <module name="transportsevice" />
+        <module name="administrationsevice" />
+        <module name="cartsevice" />
+        <module name="userservice" />
+        <module name="paysevice" />
+        <module name="productservice" />
+        <module name="discoveryservice" />
+        <module name="ordersevice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="administrationsevice" target="11" />
+      <module name="apigateway" target="11" />
+      <module name="appbase" target="1.5" />
+      <module name="cartsevice" target="11" />
+      <module name="discoveryservice" target="11" />
+      <module name="ordersevice" target="11" />
+      <module name="paysevice" target="11" />
+      <module name="productservice" target="11" />
+      <module name="transportsevice" target="11" />
+      <module name="userservice" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="administrationsevice" options="-parameters" />
+      <module name="apigateway" options="-parameters" />
+      <module name="appbase" options="" />
+      <module name="cartsevice" options="-parameters" />
+      <module name="discoveryservice" options="-parameters" />
+      <module name="ordersevice" options="-parameters" />
+      <module name="paysevice" options="-parameters" />
+      <module name="productservice" options="-parameters" />
+      <module name="transportsevice" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/administrationsevice/administrationsevice.iml" filepath="$PROJECT_DIR$/administrationsevice/administrationsevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apigateway/apigateway.iml" filepath="$PROJECT_DIR$/apigateway/apigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/app.iml" filepath="$PROJECT_DIR$/.idea/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cartsevice/cartsevice.iml" filepath="$PROJECT_DIR$/cartsevice/cartsevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discoveryservice/discoveryservice.iml" filepath="$PROJECT_DIR$/discoveryservice/discoveryservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ordersevice/ordersevice.iml" filepath="$PROJECT_DIR$/ordersevice/ordersevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paysevice/paysevice.iml" filepath="$PROJECT_DIR$/paysevice/paysevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/productservice/productservice.iml" filepath="$PROJECT_DIR$/productservice/productservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transportsevice/transportsevice.iml" filepath="$PROJECT_DIR$/transportsevice/transportsevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice/userservice.iml" filepath="$PROJECT_DIR$/userservice/userservice.iml" />
+    </modules>
+  </component>
+</project>
