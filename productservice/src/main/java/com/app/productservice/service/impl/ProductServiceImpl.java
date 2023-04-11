@@ -1,7 +1,7 @@
 package com.app.productservice.service.impl;
 
 import com.app.productservice.dto.ProductDTO;
-import com.app.productservice.entity.Product;
+import com.app.productservice.domain.Product;
 import com.app.productservice.repository.ProductRepository;
 import com.app.productservice.service.ProductService;
 import com.fasterxml.jackson.core.JsonParser;

@@ -1,6 +1,6 @@
 package com.app.productservice.repository;
 
-import com.app.productservice.entity.Brand;
+import com.app.productservice.domain.Brand;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
